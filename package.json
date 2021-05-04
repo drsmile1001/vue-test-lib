@@ -1,0 +1,27 @@
+{
+  "name": "@drsmile1001/vue-test-lib",
+  "version": "0.1.1",
+  "private": false,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build --target lib --name vue-test-lib ./src/index.ts"
+  },
+  "dependencies": {
+    "@vue/composition-api": "^1.0.0-rc.8",
+    "vue": "^2.6.11"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-typescript": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "sass": "^1.26.5",
+    "sass-loader": "^8.0.2",
+    "typescript": "~4.1.5",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "main": "./dist/vue-test-lib.common.js",
+  "files": [
+    "dist/*",
+    "types/*"
+  ],
+  "types": "./types/index.d.ts"
+}
